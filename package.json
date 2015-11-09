@@ -1,6 +1,9 @@
 {
   "name": "Project WebApp",
   "main": "server.js",
+  "engines": {
+    "node": "4.1.1"
+  },
   "dependencies": {
     "body-parser": "~1.4.2",
     "bower": "^1.6.5",
