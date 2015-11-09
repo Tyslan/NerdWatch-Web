@@ -1,5 +1,5 @@
 {
-  "name": "Project WebApp",
+  "name": "starter-node-angular",
   "main": "server.js",
   "engines": {
     "node": "4.1.1"
