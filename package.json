@@ -1,12 +1,14 @@
 {
-  "name": "starter-node-angular",
+  "name": "Project WebApp",
   "main": "server.js",
   "dependencies": {
     "body-parser": "~1.4.2",
     "bower": "^1.6.5",
     "express": "~4.5.1",
     "method-override": "~2.0.2",
-    "mongoose": "~3.8.0"
+    "mongodb": "^2.0.48",
+    "mongoose": "~3.8.0",
+    "node-restful": "^0.2.2"
   },
   "scripts": {
     "start": "node server.js",
