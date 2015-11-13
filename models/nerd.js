@@ -1,9 +1,12 @@
 // app/models/nerd.js
-// grab the mongoose module
+
+var restful = require('node-restful');
 var mongoose = require('mongoose');
 
 // define our nerd model
-// module.exports allows us to pass this to other files when it is called
-module.exports = mongoose.model('Nerd', {
-    name : {type : String, default: ''}
+var nerdSchema = new mongoose.Schema({
+    name: String
 });
+
+// module.exports allows us to pass this to other files when it is called
+module.exports = restful.model('Nerd', nerdSchema);

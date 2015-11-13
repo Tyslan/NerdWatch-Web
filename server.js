@@ -5,7 +5,7 @@ var express        = require('express');
 var app            = express();
 var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
-
+var mongoose       = require('mongoose');
 // configuration ===========================================
 
 // config files
@@ -16,7 +16,7 @@ var port = process.env.PORT || 8080;
 
 // connect to our mongoDB database
 // (uncomment after you enter in your own credentials in config/db.js)
-// mongoose.connect(db.url);
+ mongoose.connect(db.url);
 
 // get all data/stuff of the body (POST) parameters
 // parse application/json
@@ -35,7 +35,7 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 app.use(express.static(__dirname + '/public'));
 
 // routes ==================================================
-require('./routes')(app); // configure our routes
+app.use('/api', require('./routes/api'));
 
 // start app ===============================================
 // startup our app at http://localhost:8080
