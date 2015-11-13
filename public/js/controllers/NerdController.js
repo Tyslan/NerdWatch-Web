@@ -1,6 +1,9 @@
 // public/js/controllers/NerdCtrl.js
-angular.module('NerdCtrl', []).controller('NerdController', function ($scope) {
+angular
+    .module('NerdCtrl', [])
+    .controller('NerdController', NerdController);
 
-    $scope.tagline = 'Nothing beats a pocket protector!';
-
-});
+function NerdController (){
+    var vmNerd = this;
+    vmNerd.tagline = 'Nothing beats a pocket protector!';
+}
