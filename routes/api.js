@@ -17,7 +17,6 @@ module.exports = router;
 //    // server routes ===========================================================
 //    // handle things like api calls
 //    // authentication routes
-//    console.log("in routes")
 //    // sample api route
 //    app.get('/api/nerds', function(req, res) {
 //        // use mongoose to get all nerds in the database
