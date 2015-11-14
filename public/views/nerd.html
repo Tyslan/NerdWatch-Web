@@ -4,4 +4,7 @@
     <h1>Nerds and Proud</h1>
 
     <p>{{vmNerd.tagline }}</p>
+    <div ng-repeat="nerd in vmNerd.nerds">
+        <p>{{nerd.name}}</p>
+    </div>
 </div>
