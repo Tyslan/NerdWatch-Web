@@ -1,6 +1,9 @@
 // public/js/services/NerdService.js
-angular.module('NerdService', []).factory('Nerd', ['$http', function($http) {
+angular
+    .module('Nerd')
+    .factory('NerdService', NerdService);
 
+function NerdService($http){
     return {
         // call to get all nerds
         get : function() {
@@ -19,5 +22,4 @@ angular.module('NerdService', []).factory('Nerd', ['$http', function($http) {
             return $http.delete('/api/nerds/' + id);
         }
     }
-
-}]);
+}
