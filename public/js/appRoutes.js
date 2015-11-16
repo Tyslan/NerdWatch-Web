@@ -1,5 +1,7 @@
 // public/js/appRoutes.js
-angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+angular
+    .module('appRoutes', [])
+    .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 
     $routeProvider
 
@@ -16,10 +18,26 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
             controllerAs: 'vmNerd'
         })
         .when('/login', {
-            templateUrl: '/views/login.html'
+            templateUrl: '/views/login.html',
+            controller: 'AuthCtrl',
+            onEnter: ['$location', 'auth', function ($location, auth) {
+                if (auth.isLoggedIn()) {
+                    $location.url('/nerds');
+                }
+            }]
         })
-        .when('/signup', {
-            templateUrl: '/views/signup.html'
+        .when('/register', {
+            templateUrl: '/views/register.html',
+            controller: 'AuthCtrl',
+            onEnter: ['$location', 'auth', function ($state, auth) {
+                if (auth.isLoggedIn()) {
+                    $location.url('/nerds');
+                }
+            }]
+        })
+        .otherwise({
+            redirectTo: '/',
+            controller: 'MainController'
         })
     ;
 
