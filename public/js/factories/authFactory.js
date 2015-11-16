@@ -45,7 +45,6 @@ function auth($http, $window) {
 
     auth.logIn = function (user) {
         return $http.post('/login', user).success(function (data) {
-            console.log("logged in");
             auth.saveToken(data.token);
         });
     };

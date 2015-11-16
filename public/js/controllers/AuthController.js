@@ -4,16 +4,16 @@ angular
     .controller('AuthCtrl',
     [
         '$scope',
-        '$location',
+        '$state',
         'auth',
-        function ($scope, $location, auth) {
+        function ($scope, $state, auth) {
             $scope.user = {};
 
             $scope.register = function () {
                 auth.register($scope.user).error(function (error) {
                     $scope.error = error;
                 }).then(function () {
-                    $location.url('/nerds');
+                    $state.go('nerds');
                 });
             };
 
@@ -21,7 +21,7 @@ angular
                 auth.logIn($scope.user).error(function (error) {
                     $scope.error = error;
                 }).then(function () {
-                    $location.url('/nerds');
+                    $state.go('nerds');
                 });
             };
         }

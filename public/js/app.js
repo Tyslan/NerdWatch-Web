@@ -1,2 +1,3 @@
 // public/js/app.js
-angular.module('NerdApp', ['ngRoute']);
+angular.
+    module('NerdApp', ['ui.router']);
