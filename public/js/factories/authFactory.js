@@ -1,10 +1,6 @@
 // public/js/controllers/AuthController.js
 angular
-    .module('Nerd')
-    .factory('auth', auth);
-
-angular
-    .module('appRoutes')
+    .module('NerdApp')
     .factory('auth', auth);
 
 auth.$inject = ['$http', '$window'];

@@ -1,6 +1,6 @@
 // public/js/appRoutes.js
 angular
-    .module('appRoutes', [])
+    .module('NerdApp')
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 
     $routeProvider

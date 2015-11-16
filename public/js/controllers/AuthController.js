@@ -1,6 +1,6 @@
 // public/js/controllers/AuthController.js
 angular
-    .module('Nerd')
+    .module('NerdApp')
     .controller('AuthCtrl',
     [
         '$scope',

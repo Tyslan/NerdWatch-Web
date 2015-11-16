@@ -1,2 +1,2 @@
-angular
-    .module('Nerd', [])
+//angular
+//    .module('Nerd', [])

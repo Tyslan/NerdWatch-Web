@@ -1,6 +1,6 @@
 // public/js/controllers/NerdCtrl.js
 angular
-    .module('Nerd')
+    .module('NerdApp')
     .controller('NerdController', NerdController);
 
 function NerdController (NerdService){
