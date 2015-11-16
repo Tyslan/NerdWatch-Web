@@ -7,7 +7,7 @@ var jwt = require('express-jwt');
 var router = express.Router();
 var User = mongoose.model('User');
 
-var secret = 'SECRET';
+var secret = process.env.SECRET || "SECRET";
 // Authentication middleware
 var auth = jwt({secret: secret, userProperty: 'payload'});
 
