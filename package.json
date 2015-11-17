@@ -20,8 +20,7 @@
     "passport-local": "^1.0.0"
   },
   "scripts": {
-    "preinstall": "node seeder.js",
     "start": "node server.js",
-    "postinstall": "bower install"
+    "postinstall": "bower install && node seeder.js"
   }
 }
