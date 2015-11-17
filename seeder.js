@@ -5,6 +5,8 @@ var seeder = require('mongoose-seed');
 var movies = require('./seeds/movies.json')
 var series = require('./seeds/series.json')
 
+var timeout = 10000;
+
 // Connect to MongoDB via Mongoose
 seeder.connect(db.url, function () {
 
@@ -31,3 +33,9 @@ seeder.connect(db.url, function () {
         seeder.populateModels(movies);
     });
 });
+
+//hack to close seeder
+setTimeout(function () {
+    console.log("Seeding complete");
+    process.exit();
+}, timeout);
