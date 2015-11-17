@@ -14,4 +14,4 @@ var serieSchema = new mongoose.Schema({
 });
 
 // module.exports allows us to pass this to other files when it is called
-module.exports = restful.model('Serie', serieSchema);
+module.exports = restful.model('Series', serieSchema);

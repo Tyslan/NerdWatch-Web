@@ -5,7 +5,7 @@ var router = express.Router();
 // Model
 var Nerd = require('./../models/nerd');
 var Movie = require('./../models/movie');
-var Serie = require('./../models/serie');
+var Series = require('./../models/series');
 
 Nerd.methods(['get', 'put', 'post', 'delete']);
 Nerd.register(router, '/nerds');
@@ -13,7 +13,7 @@ Nerd.register(router, '/nerds');
 Movie.methods(['get', 'put', 'post', 'delete']);
 Movie.register(router, '/movies');
 
-Serie.methods(['get', 'put', 'post', 'delete']);
-Serie.register(router, '/series');
+Series.methods(['get', 'put', 'post', 'delete']);
+Series.register(router, '/series');
 
 module.exports = router;
