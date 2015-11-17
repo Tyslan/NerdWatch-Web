@@ -1,7 +1,9 @@
 #TODO
 
 - [ ] npm install crypto --save   ?
-- [ ] nerdApp functionaliteit verder verzinnen zie idee
+- [X] nerdApp functionaliteit verder verzinnen zie idee
+- [ ] Model voor film
+- [ ] Model voor serie
 - [ ] json voor seeder
     - [ ] json films
     - [ ] json series 
