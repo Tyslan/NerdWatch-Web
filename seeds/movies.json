@@ -1,0 +1,44 @@
+[
+  {
+    "model": "Movie",
+    "documents": [
+      {
+        "title": "How to Train Your Dragon 2",
+        "year": 2014,
+        "genres": [
+          "Animation",
+          "Action",
+          "Adventure",
+          "Comedy",
+          "Family",
+          "Fantasy"
+        ],
+        "description": "When Hiccup and Toothless discover an ice cave that is home to hundreds of new wild dragons and the mysterious Dragon Rider, the two friends find themselves at the center of a battle to protect the peace.",
+        "storyline": "It's been five years since Hiccup and Toothless successfully united dragons and vikings on the island of Berk. While Astrid, Snotlout and the rest of the gang are challenging each other to dragon races (the island's new favorite contact sport), the now inseparable pair journey through the skies, charting unmapped territories and exploring new worlds. When one of their adventures leads to the discovery of a secret ice cave that is home to hundreds of new wild dragons and the mysterious Dragon Rider, the two friends find themselves at the center of a battle to protect the peace. Now, Hiccup and Toothless must unite to stand up for what they believe while recognizing that only together do they have the power to change the future of both men and dragons."
+      },
+      {
+        "title": "Snowpiercer ",
+        "year": 2013,
+        "genres": [
+          "Action",
+          "Drama",
+          "Sci-Fi",
+          "Thriller"
+        ],
+        "description": "Set in a future where a failed climate-change experiment kills all life on the planet except for a lucky few who boarded the Snowpiercer, a train that travels around the globe, where a class system emerges.",
+        "storyline": "Set in 2031, the entire world is frozen except for those aboard the Snowpiercer. For 17 years, the world's survivors are on a train hurtling around the globe creating their own economy and class system. Led by Curtis, a group of lower-class citizens living in squalor at the back of the train are determined to get to the front of the train and spread the wealth around. Each section of the train holds new surprises for the group who have to battle their way through. A revolution is underway."
+      },
+      {
+        "title": "Star Trek: The Wrath of Khan",
+        "year": 1982,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama"
+        ],
+        "description": "With the assistance of the Enterprise crew, Admiral Kirk must stop an old nemesis, Khan Noonien Singh, from using a life-generating device, the Genesis Device, as the ultimate weapon.",
+        "storyline": "The Federation along with a group of scientists are working on Project Genesis, which is to bring a dead planet to life. So far the preliminary experiments have been a success. Now for the next phase which is to actually bring a planet to life, a dead planet is required. So the Federation sends a starship, the USS Reliant to find one and its first officer is Commander Pavel Chekov. They come across what appears to be a dead planet in the Ceti Alpha system. But the sensors detect something which makes it not a dead planet. But the Captain thinks maybe they can remove it, so he and Chekov go and investigate. But they find what appears to be a lifepod. When Chekov sees something, he tells the Captain they should leave, but they are captured by the inhabitants. When they meet the leader, Chekov recognizes him as Khan Noonien Singh, the genetic superman from late 20th century whom Kirk found 15 years ago. Khan tried to take over the Enterprise and kill Kirk, but Kirk subdued him and left"
+      }
+    ]
+  }
+]
