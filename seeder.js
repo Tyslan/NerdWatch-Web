@@ -13,7 +13,18 @@ seeder.connect(db.url, function () {
     ]);
 
     // Clear specified collections
-    seeder.clearModels(['Nerd'], function () {
+    seeder.clearModels(['Movie'], function () {
+        // Callback to populate DB once collections have been cleared
+        seeder.populateModels(movies);
+
+    });
+
+    seeder.loadModels([
+        './models/series.js'
+    ]);
+
+    // Clear specified collections
+    seeder.clearModels(['Series'], function () {
         // Callback to populate DB once collections have been cleared
         seeder.populateModels(movies);
 

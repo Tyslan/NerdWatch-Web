@@ -4,7 +4,7 @@
     "documents": [
       {
         "title": "How to Train Your Dragon 2",
-        "year": 2014,
+        "year": "2014",
         "genres": [
           "Animation",
           "Action",
@@ -18,7 +18,7 @@
       },
       {
         "title": "Snowpiercer ",
-        "year": 2013,
+        "year": "2013",
         "genres": [
           "Action",
           "Drama",
@@ -30,7 +30,7 @@
       },
       {
         "title": "Star Trek: The Wrath of Khan",
-        "year": 1982,
+        "year": "1982",
         "genres": [
           "Action",
           "Adventure",
