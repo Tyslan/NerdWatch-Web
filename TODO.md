@@ -1,12 +1,12 @@
 #TODO
 
-- [ ]npm install crypto --save   ?
-- [ ]nerdApp functionaliteit verder verzinnen zie idee
-- [ ]json voor seeder
+- [ ] npm install crypto --save   ?
+- [ ] nerdApp functionaliteit verder verzinnen zie idee
+- [ ] json voor seeder
     - [ ] json films
     - [ ] json series 
-- [ ]seeder maken
-- [ ]views maken
+- [ ] seeder maken
+- [ ] views maken
 
 ##Idee
 
