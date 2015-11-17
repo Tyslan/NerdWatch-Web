@@ -1,0 +1,18 @@
+[
+  {
+    "model": "Series",
+    "documents": [
+      {
+        "title": "The IT Crowd",
+        "firstYear": "2006",
+        "lastYear": "2013",
+        "nrOfSeasons": 5,
+        "genres": [
+          "Comedy"
+        ],
+        "description": "The comedic adventures of a rag-tag group of technical support workers at a large corporation.",
+        "storyline": "Deep in the sub basement of the ambiguous company of Reynholm Industries, are not one, but two socially awkward IT guys. Moss, an electronics wizard and overly naive man and Roy, a lazy disgruntled co-worker have to provide support for Reynholm Industries with their inept boss, Jen, who doesn't know the difference between hardware and software. The show revolves around Moss and Roy's antics both at work and out socially, which always ends badly"
+      }
+    ]
+  }
+]

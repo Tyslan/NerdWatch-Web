@@ -1,0 +1,35 @@
+Movie
+
+{
+    "title": "",
+    "year": ,
+    "genres": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "description": "",
+    "storyline": ""
+ }
+
+ Serie
+
+ {
+     "title": "",
+     "firstYear": "",
+     "lastYear": "",
+     "nrOfSeasons": ,
+     "genres": [
+       "",
+       "",
+       "",
+       "",
+       "",
+       ""
+     ],
+     "description": "",
+     "storyline": ""
+  }

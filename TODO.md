@@ -5,9 +5,11 @@
 - [ ] Model voor film
 - [ ] Model voor serie
 - [ ] json voor seeder
-    - [ ] json films
-    - [ ] json series 
-- [ ] seeder maken
+    - [X] initial json films
+    - [X] initial json series 
+    - [ ] final json films
+    - [ ] final json films
+- [X] seeder maken
 - [ ] views maken
 
 ##Idee
