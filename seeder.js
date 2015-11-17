@@ -16,7 +16,7 @@ seeder.connect(db.url, function () {
     // Clear specified collections
     seeder.clearModels(['Series'], function () {
         // Callback to populate DB once collections have been cleared
-        seeder.populateModels(movies);
+        seeder.populateModels(series);
 
     });
 
@@ -28,7 +28,6 @@ seeder.connect(db.url, function () {
     // Clear specified collections
     seeder.clearModels(['Movie'], function () {
         // Callback to populate DB once collections have been cleared
-        seeder.populateModels(series);
-
+        seeder.populateModels(movies);
     });
 });
