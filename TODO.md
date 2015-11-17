@@ -2,8 +2,8 @@
 
 - [ ] npm install crypto --save   ?
 - [X] nerdApp functionaliteit verder verzinnen zie idee
-- [ ] Model voor film
-- [ ] Model voor serie
+- [X] Model voor film
+- [X] Model voor serie
 - [ ] json voor seeder
     - [X] initial json films
     - [X] initial json series 
