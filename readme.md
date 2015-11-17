@@ -2,4 +2,4 @@
  		 
 ##Opdracht WebApps
 
-[Link to site](lorenzverschingel.herokuapp.com)
+[Link to site](https://lorenzverschingel.herokuapp.com/)
