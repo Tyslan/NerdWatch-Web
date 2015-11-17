@@ -1,6 +1,6 @@
 // public/js/services/NerdService.js
 angular
-    .module('Nerd')
+    .module('NerdApp')
     .factory('NerdService', NerdService);
 
 function NerdService($http){

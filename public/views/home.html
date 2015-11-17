@@ -4,4 +4,13 @@
     <h1>Home Page 4 Life</h1>
 
     <p>{{ tagline }}</p>
+
+    <div ng-hide="isLoggedIn()">
+        <h1>Authentication</h1>
+
+        <p>Login or Register with:</p>
+
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
+        <a href="/register" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
+    </div>
 </div>
