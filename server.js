@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 var morgan = require('morgan');
+var passport = require('passport');
 // configuration ===========================================
 
 // config files
@@ -16,8 +17,12 @@ var db = require('./config/db');
 var port = process.env.PORT || 8080;
 
 // connect to our mongoDB database
-// (uncomment after you enter in your own credentials in config/db.js)
+require('./models/user');
 mongoose.connect(db.url);
+
+// passport config
+require('./config/passport');
+app.use(passport.initialize());
 
 app.use(morgan('dev')); // log every request to the console
 
