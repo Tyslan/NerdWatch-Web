@@ -7,9 +7,9 @@ var mongoose = require('mongoose');
 var movieSchema = new mongoose.Schema({
     title: String,
     description: String,
+    storyline: String,
     year: Number,
     genres: Array,
-    cast: Array
 });
 
 // module.exports allows us to pass this to other files when it is called
