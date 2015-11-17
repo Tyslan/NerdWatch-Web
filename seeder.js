@@ -36,6 +36,7 @@ seeder.connect(db.url, function () {
 
 //hack to close seeder
 setTimeout(function () {
-    console.log("Seeding complete");
+    console.log("Seeder reached timeout of 10seconds");
+    console.log("Close seeder");
     process.exit();
 }, timeout);
