@@ -36,7 +36,10 @@
     - Lord of the Rings
     - The Hobbit
     - Knights of Badassdom
-
+    - The martian
+    - The imitation game
+    - A beautiful mind
+    - In the name of the king
     - [Most watched Netflix](http://www.pcmag.com/article2/0,2817,2453839,00.asp)
     - [Nerd Bastards](http://nerdbastards.com/2013/01/09/25-nerdy-movies-to-watch-for-in-2013/)
 
