@@ -1,30 +1,35 @@
 var db = require('./config/db');
 
-//var seeder = require('./Seeder/seeder.js');
-var seeder = require('mongoose-seed');
 var mongoose = require('mongoose');
-var movies = require('./seeds/movies.json');
-var series = require('./seeds/series.json');
-var timeout = 10000;
+var Movie = require('./models/movie');
+var Series = require('./models/series');
+var movies = require('./seeds/movies');
+var series = require('./seeds/series');
 
-// Connect to MongoDB via Mongoose
-seeder.connect(db.url, function () {
+console.log("Connecting to database")
+mongoose.connect(db.url);
+dropCollectionForModel(Movie);
+dropCollectionForModel(Series);
+seedCollectionForModel(Movie, movies);
+seedCollectionForModel(Series, series);
+console.log("Closing connection");
+mongoose.disconnect();
 
-    // Load Mongoose models
-    seeder.loadModels([
-        './models/series.js',
-        './models/movie.js'
-    ]);
+function dropCollectionForModel(model){
+    var modelName =  model.collection.collectionName;
+    console.log("Dropping " + modelName +"...");
+    model.collection.remove();
+    console.log(modelName + " was dropped");
+}
 
-    // Clear specified collections
-    seeder.clearModels(['Series', 'Movie'], function () {
-        // Callback to populate DB once collections have been cleared
-        seeder.populateModels(movies);
-        seeder.populateModels(series);
-    });
-});
+function seedCollectionForModel(model, data){
+    var modelName =  model.collection.collectionName;
+    console.log("Seeding " + modelName + "...");
+    model.collection.insert(data);
+    insertCompleteMessage(modelName, data.length);
+}
 
-setTimeout(function () {
-    console.log("Closing seeder");
-    mongoose.disconnect();
-}, timeout);
+function insertCompleteMessage(modelName, count) {
+    var string = count + " documents added to " + modelName + "!";
+    console.log(string);
+}
