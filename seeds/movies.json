@@ -241,5 +241,208 @@
     ],
     "description": "The film adaptation of the H.G.Wells story told on radio of the invasion of Earth by Martians.",
     "storyline": "H.G. Well's classic novel is brought to life is this tale of alien invasion. The residents of a small town in California are excited when a flaming meteor lands in the hills. Their joy is tempered somewhat when they discover that it has passengers who are not very friendly. The movie itself is understood better when you consider that it was made at the height of the Cold War--just replace Martian with Russian...."
+  },
+  {
+    "title": "Pacific Rim",
+    "year": "2013",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "description": "As a war between humankind and monstrous sea creatures wages on, a former pilot and a trainee are paired up to drive a seemingly obsolete special weapon in a desperate effort to save the world from the apocalypse.",
+    "storyline": "When monstrous creatures, known as Kaiju, started rising from the sea, a war began that would take millions of lives and consume humanity's resources for years on end. To combat the giant Kaiju, a special type of weapon was devised: massive robots, called Jaegers, which are controlled simultaneously by two pilots whose minds are locked in a neural bridge. But even the Jaegers are proving nearly defenseless in the face of the relentless Kaiju. On the verge of defeat, the forces defending mankind have no choice but to turn to two unlikely heroes - a washed up former pilot (Charlie Hunnam) and an untested trainee (Rinko Kikuchi) - who are teamed to drive a legendary but seemingly obsolete Jaeger from the past. Together, they stand as mankind's last hope against the mounting apocalypse."
+  },
+  {
+    "title": "Elysium ",
+    "year": "2013",
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "description": "In the year 2154, the very wealthy live on a man-made space station while the rest of the population resides on a ruined Earth. A man takes on a mission that could bring equality to the polarized worlds.",
+    "storyline": "In the year 2154, two classes of people exist: the very wealthy, who live on a pristine man-made space station called Elysium, and the rest, who live on an overpopulated, ruined Earth. Secretary Delacourt, a government official, will stop at nothing to enforce anti-immigration laws and preserve the luxurious lifestyle of the citizens of Elysium. That doesn't stop the people of Earth from trying to get in by any means they can. When unlucky Max is backed into a corner, he agrees to take on a daunting mission that, if successful, will not only save his life but could bring equality to these polarized worlds."
+  },
+  {
+    "title": "Gravity",
+    "year": "2013",
+    "genres": [
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "description": "A medical engineer and an astronaut work together to survive after a catastrophe destroys their shuttle and leaves them adrift in orbit.",
+    "storyline": "Dr. Ryan Stone (Sandra Bullock) is a brilliant medical engineer on her first shuttle mission, with veteran astronaut Matt Kowalski (George Clooney) in command of his last flight before retiring. But on a seemingly routine spacewalk, disaster strikes. The shuttle is destroyed, leaving Stone and Kowalsky completely alone - tethered to nothing but each other and spiraling out into the blackness."
+  },
+  {
+    "title": "Iron Man",
+    "year": "2008",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "description": "After being held captive in an Afghan cave, an industrialist creates a unique weaponized suit of armor to fight evil.",
+    "storyline": "Tony Stark. Genius, billionaire, playboy, philanthropist. Son of legendary inventor and weapons contractor Howard Stark. When Tony Stark is assigned to give a weapons presentation to an Iraqi unit led by Lt. Col. James Rhodes, he's given a ride on enemy lines. That ride ends badly when Stark's Humvee that he's riding in is attacked by enemy combatants. He survives - barely - with a chest full of shrapnel and a car battery attached to his heart. In order to survive he comes up with a way to miniaturize the battery and figures out that the battery can power something else. Thus Iron Man is born. He uses the primitive device to escape from the cave in Iraq. Once back home, he then begins work on perfecting the Iron Man suit. But the man who was put in charge of Stark Industries has plans of his own to take over Tony's technology for other matters."
+  },
+  {
+    "title": "Kick-Ass",
+    "year": "2010",
+    "genres": [
+      "Action",
+      "Comedy"
+    ],
+    "description": "Dave Lizewski is an unnoticed high school student and comic book fan who one day decides to become a super-hero, even though he has no powers, training or meaningful reason to do so.",
+    "storyline": "Dave Lizewski is an unnoticed high school student and comic book fan with a few friends and who lives alone with his father. His life is not very difficult and his personal trials not that overwhelming. However, one day he makes the simple decision to become a super-hero even though he has no powers or training."
+  },
+  {
+    "title": "Thor",
+    "year": "2011",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "description": "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.",
+    "storyline": "The warrior Thor (Hemsworth) is cast out of the fantastic realm of Asgard by his father Odin (Hopkins) for his arrogance and sent to Earth to live among humans. Falling in love with scientist Jane Foster (Portman) teaches Thor much-needed lessons, and his new-found strength comes into play as a villain from his homeland sends dark forces toward Earth."
+  },
+  {
+    "title": "The Hobbit",
+    "year": "1977",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Fantasy"
+    ],
+    "description": "A homebody hobbit in Middle Earth gets talked into joining a quest with a group of dwarves to recover their treasure from a dragon.",
+    "storyline": "Bilbo Baggins the Hobbit was just minding his own business, when his occasional visitor Gandalf the Wizard drops in one evening . One by one, a whole group of dwarves drop in, and before he knows it, Bilbo has joined their quest to reclaim their kingdom, taken from them by an evil dragon named Smaug. The only problem is that Gandalf has told the dwarves that Bilbo is an expert burglar, but he isn't...."
+  },
+  {
+    "title": "The Hobbit: The Desolation of Smaug",
+    "year": "2013",
+    "genres": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "description": "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring.",
+    "storyline": "After successfully crossing over (and under) the Misty Mountains, Thorin and Company must seek aid from a powerful stranger before taking on the dangers of Mirkwood Forest--without their Wizard. If they reach the human settlement of Lake-town it will be time for the hobbit Bilbo Baggins to fulfill his contract with the dwarves. The party must complete the journey to Lonely Mountain and burglar Baggins must seek out the Secret Door that will give them access to the hoard of the dragon Smaug. And, where has Gandalf got off to? And what is his secret business to the south?"
+  },
+  {
+    "title": "Guardians of the Galaxy",
+    "year": "2014",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "description": "A group of intergalactic criminals are forced to work together to stop a fanatical warrior from taking control of the universe.",
+    "storyline": "After stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth, is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as the "Guardians of the Galaxy" to save the world."
+  },
+  {
+    "title": "In the Name of the King: A Dungeon Siege Tale",
+    "year": "2007",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "description": "A man named Farmer sets out to rescue his kidnapped wife and avenge the death of his son -- two acts committed by the Krugs, a race of animal-warriors who are controlled by the evil Gallian.",
+    "storyline": "Set in the kingdom of Ehb, the story follows Farmer (Jason Statham), who was adopted by his village. When Farmer's wife, Solana (Claire Forlani), and his son leave to sell vegetables at the town of Stonebridge, Farmer's farm is attacked by creatures called Krugs. With the help of his friend and neighbor Norrick (Ron Perlman), he travels to Stonebridge where his wife and son are. Before he arrives, the Krugs, controlled by the wizard Gallian (Ray Liotta), kill his son and capture his wife. Farmer, with the help of Bastian (Will Sanderson), his brother-in-law, and Norrick sets out to find and rescue his wife. The King's nephew Fallow (Matthew Lillard) is conspiring with the wizard Gallian to take over the kingdom led by King Konreid ('Burt Reynolds')."
+  },
+  {
+    "title": "Knights of Badassdom",
+    "year": "2013",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "description": "Live-action role players conjure up a demon from Hell by mistake and they must deal with the consequences.",
+    "storyline": "Live-action role players conjure up a demon from Hell by mistake and they must deal with the consequences."
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "year": "2002",
+    "genres": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "description": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+    "storyline": "The Fellowship has been broken. Boromir is dead, Frodo Baggins and Samwise Gamgee have gone to Mordor alone to destroy the One Ring, Merry and Pippin have been captured by the Uruk-hai, and Aragorn, Legolas, and Gimli have made friends of the Rohan, a race of humans that are in the path of the upcoming war, led by its aging king, Théoden. The two towers between Mordor and Isengard, Barad-dúr and Orthanc, have united in their lust for destruction. The corrupt wizard Saruman, under the power of the Dark Lord Sauron, and his slimy assistant, Gríma Wormtongue, have created a grand Uruk-hai army bent on the destruction of Man and Middle-earth. The rebellion against Sauron is building up and will be led by Gandalf the White, who was thought to be dead after the Balrog captured him. One of the Ring's original bearers, the creature Gollum, has tracked Frodo and Sam down in search of his 'precious', but is captured by the Hobbits and used as a way to lead them to Mt. Doom. The War of the Ring has now begun..."
+  },
+  {
+    "title": "Indiana Jones and the Raiders of the Lost Ark",
+    "year": "1981",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "description": "Archaeologist and adventurer Indiana Jones is hired by the US government to find the Ark of the Covenant before the Nazis.",
+    "storyline": "The year is 1936. An archeology professor named Indiana Jones is venturing in the jungles of South America searching for a golden statue. Unfortunately, he sets off a deadly trap but miraculously escapes. Then, Jones hears from a museum curator named Marcus Brody about a biblical artifact called The Ark of the Covenant, which can hold the key to humanly existence. Jones has to venture to vast places such as Nepal and Egypt to find this artifact. However, he will have to fight his enemy Rene Belloq and a band of Nazis in order to reach it."
+  },
+  {
+    "title": "Star Wars",
+    "year": "1977",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "description": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a wookiee and two droids to save the universe from the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader.",
+    "storyline": "A young boy from Tatooine sets out on an adventure with an old Jedi named Obi-Wan Kenobi as his mentor to save Princess Leia from the ruthless Darth Vader and Destroy the Death Star built by the Empire which has the power to destroy the entire galaxy."
+  },
+  {
+    "title": "X-Men",
+    "year": "2000",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "description": "Two mutants come to a private academy for their kind whose resident superhero team must oppose a terrorist organization with similar powers.",
+    "storyline": "In a world where both Mutants and Humans fear each other, Marie, better known as Rogue, runs away from home and hitches a ride with another mutant, known as Logan, a.k.a. Wolverine. Charles Xavier, who owns a school for young mutants, sends Storm and Cyclops to bring them back before it is too late. Magneto, who believes a war is approaching, has an evil plan in mind, and needs young Rogue to help him."
+  },
+  {
+    "title": "Real Genius",
+    "year": "1985",
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "description": "Teenage geniuses deal with their abilities while developing a laser.",
+    "storyline": "Mitch is one of the youngest students ever accepted to a university known for its programs for geniuses. He's partnered up with his roommate, science club legend Chris Knight, on a project to develop a high-powered laser. Together with their hyper-kinetic friends, they employ their intellects in the pursuit of bigger blasts, practical jokes, and a deeper understanding of what real genius is. When their final, functional laser is stolen by their teacher for a military weapon, they decide to get even."
+  },
+  {
+    "title": "A Beautiful Mind",
+    "year": "2001",
+    "genres": [
+      "Biography",
+      "Drama"
+    ],
+    "description": "After a brilliant but asocial mathematician, John Nash, accepts secret work in cryptography, his life takes a turn for the nightmarish.",
+    "storyline": "From the heights of notoriety to the depths of depravity, John Forbes Nash, Jr. experienced it all. A mathematical genius, he made an astonishing discovery early in his career and stood on the brink of international acclaim. But the handsome and arrogant Nash soon found himself on a painful and harrowing journey of self-discovery. After many years of struggle, he eventually triumphed over his tragedy, and finally - late in life - received the Nobel Prize."
+  },
+  {
+    "title": "The Imitation Game",
+    "year": "2014",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Thriller"
+    ],
+    "description": "During World War II, mathematician Alan Turing tries to crack the enigma code with help from fellow mathematicians.",
+    "storyline": "Based on the real life story of legendary cryptanalyst Alan Turing, the film portrays the nail-biting race against time by Turing and his brilliant team of code-breakers at Britain's top-secret Government Code and Cypher School at Bletchley Park, during the darkest days of World War II. "
+  },
+  {
+    "title": "The Martian",
+    "year": "2015",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "description": "During a manned mission to Mars, Astronaut Mark Watney is presumed dead after a fierce storm and left behind by his crew. But Watney has survived and finds himself stranded and alone on the hostile planet. With only meager supplies, he must draw upon his ingenuity, wit and spirit to subsist and find a way to signal to Earth that he is alive.",
+    "storyline": "During a manned mission to Mars, Astronaut Mark Watney is presumed dead after a fierce storm and left behind by his crew. But Watney has survived and finds himself stranded and alone on the hostile planet. With only meager supplies, he must draw upon his ingenuity, wit and spirit to subsist and find a way to signal to Earth that he is alive. Millions of miles away, NASA and a team of international scientists work tirelessly to bring 'the Martian' home, while his crewmates concurrently plot a daring, if not impossible, rescue mission. As these stories of incredible bravery unfold, the world comes together to root for Watney's safe return."
   }
 ]
