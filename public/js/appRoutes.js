@@ -25,7 +25,7 @@ angular
                 controller: 'AuthCtrl',
                 onEnter: ['$location', 'auth', function ($location, auth) {
                     if (auth.isLoggedIn()) {
-                        $location.url('/nerds');
+                        $location.url('/home');
                     }
                 }]
             })
@@ -35,9 +35,15 @@ angular
                 controller: 'AuthCtrl',
                 onEnter: ['$location', 'auth', function ($location, auth) {
                     if (auth.isLoggedIn()) {
-                        $location.url('/nerds');
+                        $location.url('/home');
                     }
                 }]
+            })
+            .state('movies', {
+                url: '/movies',
+                templateUrl: '/views/movies.html',
+                controller: 'MovieController',
+                controllerAs: 'vmMovies'
             });
 
         $urlRouterProvider.otherwise('home');

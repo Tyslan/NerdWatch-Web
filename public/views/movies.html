@@ -1,0 +1,14 @@
+<!-- public/views/nerd.html -->
+
+<div class="jumbotron text-center">
+    <h1>Movies</h1>
+
+    <p>{{vmMovies.tag}}</p>
+
+    <div ng-show="vmMovies.isLoggedIn()">
+        <h2>Movies:</h2>
+        <div ng-repeat="movie in vmMovies.movies">
+            <p>{{movie.title}}</p>
+        </div>
+    </div>
+</div>
