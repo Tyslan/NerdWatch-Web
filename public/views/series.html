@@ -1,0 +1,26 @@
+<!-- public/views/series.html -->
+
+<div class="jumbotron text-center">
+    <h1>Series</h1>
+
+    <p>{{vmSeries.tag}}</p>
+
+    <div ng-show="vmSeries.isLoggedIn()">
+        <div ng-repeat="series in vmSeries.series">
+            <div class="series">
+                <h2>{{series.title}}</h2>
+
+                <p>{{series.firstYear}} - {{series.firstYear}}</p>
+
+                <p>{{series.nrOfSeasons}} Seasons</p>
+
+                <div ng-repeat="genre in series.genres track by $index">
+                    <p>{{genre}}</p>
+                </div>
+                <p>{{series.description}}</p>
+
+                <p>{{series.storyline}}</p>
+            </div>
+        </div>
+    </div>
+</div>

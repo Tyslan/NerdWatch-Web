@@ -44,6 +44,12 @@ angular
                 templateUrl: '/views/movies.html',
                 controller: 'MovieController',
                 controllerAs: 'vmMovies'
+            })
+            .state('series', {
+                url: '/series',
+                templateUrl: '/views/series.html',
+                controller: 'SeriesController',
+                controllerAs: 'vmSeries'
             });
 
         $urlRouterProvider.otherwise('home');
