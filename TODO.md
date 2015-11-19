@@ -7,7 +7,7 @@
 - [ ] json voor seeder
     - [X] initial json films
     - [X] initial json series 
-    - [ ] final json films
+    - [X] final json films
     - [X] final json films
 - [X] seeder maken
 - [ ] views maken
