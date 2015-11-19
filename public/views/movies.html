@@ -7,8 +7,17 @@
 
     <div ng-show="vmMovies.isLoggedIn()">
         <h2>Movies:</h2>
+
         <div ng-repeat="movie in vmMovies.movies">
-            <p>{{movie.title}}</p>
+            <div class="movie">
+                <p>{{movie.title}} - {{movie.year}}</p>
+
+                <div ng-repeat="genre in movie.genres track by $index">
+                    <p>{{genre}}</p>
+                </div>
+                <p>{{movie.description}}</p>
+                <p>{{movie.storyline}}</p>
+            </div>
         </div>
     </div>
 </div>
