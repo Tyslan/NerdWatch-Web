@@ -9,3 +9,10 @@ gulp.task('runTests', function(){
     return gulp.src(testFolder + '/*js')
         .pipe(plugins.mocha());
 });
+
+gulp.task('compress', function() {
+    console.log(plugins);
+    return gulp.src('public/js/**/*.js')
+        .pipe(plugins.uglify())
+        .pipe(gulp.dest('public/dist/js'));
+});
