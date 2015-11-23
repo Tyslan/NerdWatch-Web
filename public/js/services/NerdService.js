@@ -21,5 +21,5 @@ function NerdService($http){
         delete : function(id) {
             return $http.delete('/api/nerds/' + id);
         }
-    }
+    };
 }

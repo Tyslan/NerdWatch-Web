@@ -1,34 +1,35 @@
 var db = require('./config/db');
 
-//var seeder = require('./Seeder/seeder.js');
-var seeder = require('mongoose-seed');
-var movies = require('./seeds/movies.json')
-var series = require('./seeds/series.json')
+var mongoose = require('mongoose');
+var Movie = require('./models/movie');
+var Series = require('./models/series');
+var movies = require('./seeds/movies');
+var series = require('./seeds/series');
 
-// Connect to MongoDB via Mongoose
-seeder.connect(db.url, function () {
+console.log('Connecting to database');
+mongoose.connect(db.url);
+dropCollectionForModel(Movie);
+dropCollectionForModel(Series);
+seedCollectionForModel(Movie, movies);
+seedCollectionForModel(Series, series);
+console.log('Closing connection');
+mongoose.disconnect();
 
-    // Load Mongoose models
-    seeder.loadModels([
-        './models/series.js'
-    ]);
+function dropCollectionForModel(model){
+    var modelName =  model.collection.collectionName;
+    console.log('Dropping ' + modelName +'...');
+    model.collection.remove();
+    console.log(modelName + ' was dropped');
+}
 
-    // Clear specified collections
-    seeder.clearModels(['Series'], function () {
-        // Callback to populate DB once collections have been cleared
-        seeder.populateModels(movies);
+function seedCollectionForModel(model, data){
+    var modelName =  model.collection.collectionName;
+    console.log('Seeding ' + modelName + '...');
+    model.collection.insert(data);
+    insertCompleteMessage(modelName, data.length);
+}
 
-    });
-
-    // Load Mongoose models
-    seeder.loadModels([
-        './models/movie.js'
-    ]);
-
-    // Clear specified collections
-    seeder.clearModels(['Movie'], function () {
-        // Callback to populate DB once collections have been cleared
-        seeder.populateModels(series);
-
-    });
-});
+function insertCompleteMessage(modelName, count) {
+    var string = count + ' documents added to ' + modelName + '!';
+    console.log(string);
+}

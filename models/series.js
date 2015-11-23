@@ -9,7 +9,8 @@ var serieSchema = new mongoose.Schema({
     description: String,
     storyline: String,
     nrOfSeasons: Number,
-    year: Number,
+    firstYear: String,
+    lastYear: String,
     genres: Array
 });
 

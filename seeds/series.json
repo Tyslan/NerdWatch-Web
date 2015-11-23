@@ -1,18 +1,317 @@
 [
   {
-    "model": "Series",
-    "documents": [
-      {
-        "title": "The IT Crowd",
-        "firstYear": "2006",
-        "lastYear": "2013",
-        "nrOfSeasons": 5,
-        "genres": [
-          "Comedy"
-        ],
-        "description": "The comedic adventures of a rag-tag group of technical support workers at a large corporation.",
-        "storyline": "Deep in the sub basement of the ambiguous company of Reynholm Industries, are not one, but two socially awkward IT guys. Moss, an electronics wizard and overly naive man and Roy, a lazy disgruntled co-worker have to provide support for Reynholm Industries with their inept boss, Jen, who doesn't know the difference between hardware and software. The show revolves around Moss and Roy's antics both at work and out socially, which always ends badly"
-      }
-    ]
+    "title": "The IT Crowd",
+    "firstYear": "2006",
+    "lastYear": "2013",
+    "nrOfSeasons": 5,
+    "genres": [
+      "Comedy"
+    ],
+    "description": "The comedic adventures of a rag-tag group of technical support workers at a large corporation.",
+    "storyline": "Deep in the sub basement of the ambiguous company of Reynholm Industries, are not one, but two socially awkward IT guys. Moss, an electronics wizard and overly naive man and Roy, a lazy disgruntled co-worker have to provide support for Reynholm Industries with their inept boss, Jen, who doesn't know the difference between hardware and software. The show revolves around Moss and Roy's antics both at work and out socially, which always ends badly"
+  },
+  {
+    "title": "Agents of S.H.I.E.L.D.",
+    "firstYear": "2013",
+    "lastYear": "now",
+    "nrOfSeasons": 3,
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "description": "The missions of the Strategic Homeland Intervention, Enforcement and Logistics Division.",
+    "storyline": "After the Battle of New York, the world has changed. It now knows not only about the Avengers, but also the powerful menaces that require those superheroes and more to face them. In response, Phil Coulson of the Strategic Homeland Intervention, Enforcement and Logistics Division assembles an elite covert team to find and deal with these threats wherever they are found. With a world rapidly becoming more bizarre and dangerous than ever before as the supervillains arise, these agents of S.H.I.E.L.D. are ready to take them on."
+  },
+  {
+    "title": "Arrow ",
+    "firstYear": "2012",
+    "lastYear": "now",
+    "nrOfSeasons": 4,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Crime"
+    ],
+    "description": "Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea. He returns five years later a changed man, determined to clean up the city as a hooded vigilante armed with a bow.",
+    "storyline": "Oliver Queen and his father are lost at sea when their luxury yacht sinks, apparently in a storm. His father dies, but Oliver survives for five years on an uncharted island and eventually returns home. But he wasn't alone on the island where he learned not only how to fight and survive but also of his father's corruption and unscrupulous business dealings. He returns to civilization a changed man, determined to put things right. He disguises himself with the hood of one of his mysterious island mentors, arms himself with a bow and sets about hunting down the men and women who have corrupted his city."
+  },
+  {
+    "title": "Daredevil",
+    "firstYear": "2015",
+    "lastYear": "now",
+    "nrOfSeasons": 2,
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "description": "A blind lawyer, with his other senses superhumanly enhanced, fights crime as a costumed superhero.",
+    "storyline": "As a child Matt Murdock was blinded by a chemical spill in a freak accident. Instead of limiting him it gave him superhuman senses that enabled him to see the world in a unique and powerful way. Now he uses these powers to deliver justice, not only as a lawyer in his own law firm, but also as vigilante at night, stalking the streets of Hell's Kitchen as Daredevil, the man without fear."
+  },
+  {
+    "title": "Star Trek: Deep Space Nine",
+    "firstYear": "1993",
+    "lastYear": "1999",
+    "nrOfSeasons": 7,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "description": "Orbiting the liberated planet of Bajor, a Federation space station guards the opening of a stable wormhole to the far side of the galaxy.",
+    "storyline": "The stable wormhole discovered by the Deep Space Nine crew is known to the Bajoran people as the Celestial Temple of their Prophets. Sisko, as discoverer of the wormhole and its inhabitants, is therefore the Emissary of Bajoran prophesy. The wormhole's other end is in the Gamma Quadrant, halfway around the galaxy from Bajor. That section of space is dominated by the malevolent Dominion. The Dominion is led by the Changelings, the race of shapeshifters to which Odo belongs. As of the beginning of the sixth season, Cardassia has joined the Dominion, and together they are waging war on the Federation and their Klingon allies. The war is quickly becoming the most costly war ever for the Federation, and the Deep Space Nine crew must fight to protect their way of life."
+  },
+  {
+    "title": "Buffy the Vampire Slayer",
+    "firstYear": "1997",
+    "lastYear": "2003",
+    "nrOfSeasons": 7,
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy"
+    ],
+    "description": "A young girl, destined to slay vampires, demons and other infernal creatures, deals with her life fighting evil, with the help of her friends.",
+    "storyline": "'In every generation there is a chosen one... she alone will stand against the vampires, the demons and the forces of darkness. She is the slayer.' Buffy Summers knows this tale by heart, and no matter how hard she tries to be just a 'normal girl', she can not escape from her destiny... Thankfully, she is not alone in her quest to save the world, as she has the help of her friends, the hilarious (and surprisingly quite effective) evil-fighting team called 'The Scooby Gang'. Together, Buffy & co. will slay their demons, survive one apocalypse after another, attend high school and college... and above all, understand that growing up can truly be Hell sometimes... literally."
+  },
+  {
+    "title": "Firefly",
+    "firstYear": "2002",
+    "lastYear": "2003",
+    "nrOfSeasons": 1,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "description": "Five hundred years in the future, a renegade crew aboard a small spacecraft tries to survive as they travel the unknown parts of the galaxy and evade warring factions as well as authority agents out to get them.",
+    "storyline": "Captain Malcolm 'Mal' Reynolds is a former galactic war veteran who is the captain of the transport ship 'Serenity'. Mal and his crew, ensign Zoe Alleyne Washburne; Zoe's husband, pilot Hoban 'Wash' Washburne; muscular mercenary Jayne Cobb; young mechanic Kaylee Frye; former Alliance medical officer Simon Tam; his disturbed teenage sister River (both on the run from the interplanetary government 'The Alliance'); the beautiful courtesan Inara Serra; and preacher Shepherd Book do any jobs, legal or illegal, they can find as the Serenity crew travels across the outskirts of outer space."
+  },
+  {
+    "title": "Doctor Who",
+    "firstYear": "2005",
+    "lastYear": "now",
+    "nrOfSeasons": 10,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Family"
+    ],
+    "description": "The further adventures of the time traveling alien adventurer and his companions.",
+    "storyline": "The Doctor, over 2,000 years old, travels through time and space in a blue police box and is rarely seen without his companions. This revived series of Doctor Who began airing in March of 2005, 42 years after the original series debuted, in 1963. The original series ran until 1989, and was followed by a 1996 TV movie."
+  },
+  {
+    "title": "Merlin",
+    "firstYear": "2008",
+    "lastYear": "2012",
+    "nrOfSeasons": 5,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "description": "The adventures of the legendary sorcerer as a young man.",
+    "storyline": "Young Merlin is a teenager, discovering and then learning to master his magical gift. Magister Gaius, King Uther Pendragon's learned court physician to whom he's assigned as humble page, teaches him medicine, coaches his magical self-study, and warns him of Uther's strong aversion to magic. Merlin becomes squire to the noble but imprudent crown prince, Arthur, whose fate is linked with Merlin."
+  },
+  {
+    "title": "Torchwood",
+    "firstYear": "2006",
+    "lastYear": "2011",
+    "nrOfSeasons": 4,
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "description": "The members of the Torchwood Institute, a secret organization founded by the British Crown, fight to protect the Earth from extraterrestrial and supernatural threats.",
+    "storyline": "Captain Jack Harkness, the former Time Agent and con man from the 51st century last seen traveling with the Doctor, ventures to early 21st century Cardiff. There, he becomes a member of Torchwood Institute, a renegade criminal investigation group founded by Queen Victoria to battle hostile extraterrestrial and supernatural threats."
+  },
+  {
+    "title": "Futurama",
+    "firstYear": "1999",
+    "lastYear": "2013",
+    "nrOfSeasons": 7,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "description": "Fry, a pizza guy is accidentally frozen in 1999 and thawed out New Year's Eve 2999.",
+    "storyline": "Phillip Fry is a 25-year-old pizza delivery boy whose life is going nowhere. When he accidentally freezes himself on December 31, 1999, he wakes up 1,000 years in the future and has a chance to make a fresh start. He goes to work for the Planet Express Corporation, a futuristic delivery service that transports packages to all five quadrants of the universe. His companions include the delivery ship's captain, Leela, a beautiful one-eyed female alien who kicks some serious butt, and Bender, a robot with very human flaws."
+  },
+  {
+    "title": "Better Off Ted",
+    "firstYear": "2009",
+    "lastYear": "2010",
+    "nrOfSeasons": 2,
+    "genres": [
+      "Comedy"
+    ],
+    "description": "In a science-based company, a manager tries to keep control of his scientists while being pressured by his shrewd boss.",
+    "storyline": "A sitcom that deserved more than its truncated two seasons, Better Off Ted is about a tech company with some ethical problems, socially inept scientists, office romance, and a likable protagonist named Ted who tries to balance it all."
+  },
+  {
+    "title": "The Walking Dead",
+    "firstYear": "2010",
+    "lastYear": "now",
+    "nrOfSeasons": 7,
+    "genres": [
+      "Drama",
+      "Horror"
+    ],
+    "description": "Sheriff Deputy Rick Grimes leads a group of survivors in a world overrun by zombies.",
+    "storyline": "Rick Grimes is a former Sheriff's deputy who has been in a coma for several months after being shot while on duty. When he awakens he discovers that the world has been ravished by a zombie epidemic of apocalyptic proportions, and that he seems to be the only person still alive. After returning home to discover his wife and son missing, he heads for Atlanta to search for his family. Narrowly escaping death at the hands of the zombies on arrival in Atlanta he is aided by another survivor, Glenn, who takes Rick to a camp outside the town. There Rick finds his wife Lori and his son, Carl, along with his partner/best friend Shane and a small group of survivors who struggle to fend off the zombie hordes; as well as competing with other surviving groups who are prepared to do whatever it takes to survive in this harsh new world."
+  },
+  {
+    "title": "The X Files",
+    "firstYear": "1993",
+    "lastYear": "2002",
+    "nrOfSeasons": 9,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "description": "Two FBI agents, Fox Mulder the believer and Dana Scully the skeptic, investigate the strange and unexplained while hidden forces work to impede their efforts.",
+    "storyline": "FBI agents Fox Mulder and Dana Scully are different: Mulder is a believer in the paranormal while Scully is not. Together, they investigate paranormal cases which takes them all the way to alien conspiracies within the U.S. government and even puts their lives and careers at risk. Together, they try to solve the mysteries within the U.S. government, no matter what they have to do, and along the way they try to solve any other case that's related to the paranormal."
+  },
+  {
+    "title": "Continuum",
+    "firstYear": "2012",
+    "lastYear": "now",
+    "nrOfSeasons": 4,
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "description": "A detective from the year 2077 finds herself trapped in present day Vancouver and searching for ruthless criminals from the future.",
+    "storyline": "This excellent Canadian series features Rachel Nichols as a female cop from the future trapped in our present, trying to fight terrorists she followed from sabotaging her timeline."
+  },
+  {
+    "title": "Battlestar Galactica",
+    "firstYear": "2004",
+    "lastYear": "2009",
+    "nrOfSeasons": 4,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "description": "When an old enemy, the Cylons, resurfaces and obliterate the 12 colonies, the crew of the aged Galactica protects a small civilian fleet - the last of humanity - as they journey toward the fabled 13th colony of Earth.",
+    "storyline": ""
+  },
+  {
+    "title": "Psych",
+    "firstYear": "2006",
+    "lastYear": "2014",
+    "nrOfSeasons": 8,
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Mystery"
+    ],
+    "description": "A novice sleuth is hired by the police after he cons them into thinking he has psychic powers which help solve crimes. With the assistance of his reluctant best friend, the duo take on a series of complicated cases.",
+    "storyline": "Think you are psychic? Well so does Shawn Spencer. Shawn and his best friend Gus own a business called Psych. They are able to stay in business only because of the cases they work with Santa Barbara police department as psychics. Shawn and Gus go through many ups and downs trying to keep the ruse up. Can they pretend forever? Or is the world they built going to come crumbling down?"
+  },
+  {
+    "title": "The Guild",
+    "firstYear": "2007",
+    "lastYear": "now",
+    "nrOfSeasons": 6,
+    "genres": [
+      "Comedy"
+    ],
+    "description": "Follow the hi jinks of a WOW Guild as they try and deal with real life events.",
+    "storyline": "The show revolves around the lives of online guild, The Knights of Good, who play countless hours of an unnamed MMORPG video game. The story focuses on Codex, the guild's Priestess, who attempts to lead a normal life after one of her guild-mates, Warlock Zaboo, shows up on her doorstep."
+  },
+  {
+    "title": "Adventure Time with Finn & Jake",
+    "firstYear": "2010",
+    "lastYear": "now",
+    "nrOfSeasons": 7,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "description": "A human boy named Finn and adoptive brother and best friend Jake the Dog, protect the citizens of the Land of Ooo from foes of various shapes and sizes.",
+    "storyline": "Not as weird as Aqua Teen Hunger Force but just as funny. Follow the adventures of Fin and Jake in a strange world that is far more adult and fucked up than the cute animation style would have you believe."
+  },
+  {
+    "title": "Chuck",
+    "firstYear": "2007",
+    "lastYear": "2012",
+    "nrOfSeasons": 5,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama"
+    ],
+    "description": "When a twenty-something computer geek inadvertently downloads critical government secrets into his brain, CIA and NSA assign two agents to protect him and exploit such knowledge, turning his life upside down.",
+    "storyline": "Since geeky Chuck accidentally became the mental host of the Intersect, an unprecedentedly powerful computer mind containing all information available to the US government, he's a primordial national security asset and risk. So CIA and NSA each appoint a top agent to guard Chuck, and often get involved with him in spy adventures. Meanwhile his identity must be kept secret from Chuck's sister, her perfect partner Devon, both surgeons, and Chuck's goofy colleagues in Buy More, the Burbank electronics store where he works as a cover."
+  },
+  {
+    "title": "The Big Bang Theory",
+    "firstYear": "2007",
+    "lastYear": "now",
+    "nrOfSeasons": 9,
+    "genres": [
+      "Comedy"
+    ],
+    "description": "A woman who moves into an apartment across the hall from two brilliant but socially awkward physicists shows them how little they know about life outside of the laboratory.",
+    "storyline": "Leonard Hofstadter and Sheldon Cooper are both brilliant physicists working at Caltech in Pasadena, California. They are colleagues, best friends, and roommates, although in all capacities their relationship is always tested primarily by Sheldon's regimented, deeply eccentric, and non-conventional ways. They are also friends with their Caltech colleagues mechanical engineer Howard Wolowitz and astrophysicist Rajesh Koothrappali. The foursome spend their time working on their individual work projects, playing video games, watching science-fiction movies, or reading comic books. As they are self-professed nerds, all have little or no luck with popular women. When Penny, a pretty woman and an aspiring actress originally from Omaha, moves into the apartment across the hall from Leonard and Sheldon's, Leonard has another aspiration in life, namely to get Penny to be his girlfriend."
+  },
+  {
+    "title": "Game of Thrones",
+    "firstYear": "2011",
+    "lastYear": "now",
+    "nrOfSeasons": 6,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "description": "Several noble families fight for control of the mythical land of Westeros.",
+    "storyline": "Nine noble families fight for control of the mythical land of Westeros. Political and sexual intrigue is pervasive. Robert Baratheon, King of Westeros, asks his old friend Eddard, Lord Stark, to serve as Hand of the King, or highest official. Secretly warned that the previous Hand was assassinated, Eddard accepts in order to investigate further. Meanwhile the Queen's family, the Lannisters, may be hatching a plot to take power. Across the sea, the last members of the previous and deposed ruling family, the Targaryens, are also scheming to regain the throne. The friction between the houses Stark, Lannister, Baratheon and Targaryen and with the remaining great houses Greyjoy, Tully, Arryn, Tyrell and Martell leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war and political confusion, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond."
+  },
+  {
+    "title": "Andromeda",
+    "firstYear": "2000",
+    "lastYear": "2005",
+    "nrOfSeasons": 5,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "description": "Captain Hunt and the crew of the Starship Andromeda set out on a mission to rebuild the Systems Commonwealth 300 years after its fall.",
+    "storyline": "After being frozen in time for 300 years, captain Dylan Hunt and his sentient warship Andromeda sets out to restore peace and civilization to the known universe. With him is the crew of the ship that, with profit in mind and unknowing of her captain still being alive, salvaged Andromeda from the black hole keeping her suspended in time. Andromeda originally hid in the black hole after a big battle. When Captain Hunt wakes up he realizes that this battle was the beginning of an epic war and that the great civilization he was defending, the Commonwealth, has been eradicated from existence. He and his unlikely and sometimes unpredictable crew starts on a mission to once again bring hope to the galaxy."
+  },
+  {
+    "title": "How I Met Your Mother",
+    "firstYear": "2005",
+    "lastYear": "2014",
+    "nrOfSeasons": 9,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "description": "A father recounts to his children, through a series of flashbacks, the journey he and his four best friends took leading up to him meeting their mother.",
+    "storyline": "The year is 2030. Ted Mosby is relaying the story of how he met his wife to his daughter and son. The story starts in the year 2005, when then twenty-seven year old architect Ted was spurred on to want to get married after his best friends from his college days at Wesleyan, lawyer Marshall Eriksen, who was his roommate at the time and kindergarten teacher Lily Aldrin, got engaged after nine years of dating each other. Ted's new quest in life was much to the dismay of his womanizing friend, Barney Stinson. But soon after Marshall and Lily's engagement, Ted believed that his life mate was going to be news reporter and aspiring news anchor Robin Scherbatsky, who, despite having had a romantic relationship with her after this time, ended up being who the kids know as their 'Aunt' Robin. As Ted relays the story to his kids, the constants are that their Uncle Marshall, Aunt Lily, Uncle Barney and Aunt Robin are always in the picture and thus have something to do with how he got together ..."
+  },
+  {
+    "title": "Stargate SG-1",
+    "firstYear": "1997",
+    "lastYear": "2007",
+    "nrOfSeasons": 10,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "description": "A secret military team, SG-1, is formed to explore the recently discovered Stargates.",
+    "storyline": "General Hammond summons Colonel Jack O'Neill out of retirement to embark on a secret rescue mission. O'Neill confesses that he disobeyed orders to destroy the Stargate on Planet Abydos, and that scientist Daniel Jackson may still be alive. Arriving on Abydos with his team, O'Neill meets up once again with the scientist, who has discovered a giant elaborate cartouche in hieroglyphics. All signs point to the fact that this is a map of many Stargates that exist throughout the galaxy - a development that makes the dream of the SG-1 team to travel throughout the universe in time a reality."
   }
 ]

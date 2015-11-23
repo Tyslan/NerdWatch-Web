@@ -1,0 +1,23 @@
+<!-- public/views/movies.html -->
+
+<div class="jumbotron text-center">
+    <h1>Movies</h1>
+
+    <p>{{vmMovies.tag}}</p>
+
+    <div ng-show="vmMovies.isLoggedIn()">
+        <h2>Movies:</h2>
+
+        <div ng-repeat="movie in vmMovies.movies">
+            <div class="movie">
+                <h2>{{movie.title}} - {{movie.year}}</h2>
+
+                <div ng-repeat="genre in movie.genres track by $index">
+                    <p>{{genre}}</p>
+                </div>
+                <p>{{movie.description}}</p>
+                <p>{{movie.storyline}}</p>
+            </div>
+        </div>
+    </div>
+</div>

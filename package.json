@@ -13,15 +13,21 @@
     "method-override": "~2.0.2",
     "mongodb": "^2.0.48",
     "mongoose": "~4.0.0",
-    "mongoose-seed": "^0.1.5",
     "morgan": "^1.6.1",
     "node-restful": "^0.2.2",
     "passport": "^0.3.2",
-    "passport-local": "^1.0.0",
+    "passport-local": "^1.0.0"
   },
   "scripts": {
-    "preinstall": "node seeder.js",
     "start": "node server.js",
-    "postinstall": "bower install"
+    "postinstall": "bower install && node seeder.js"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-uglify": "^1.5.1",
+    "supertest": "^1.1.0"
   }
 }
