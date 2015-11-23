@@ -1,11 +1,11 @@
 // public/js/controllers/AuthController.js
 angular
     .module('NerdApp')
-    .factory('auth', auth);
+    .factory('auth', authFactory);
 
-auth.$inject = ['$http', '$window'];
+authFactory.$inject = ['$http', '$window'];
 
-function auth($http, $window) {
+function authFactory($http, $window) {
     var auth = {};
 
     auth.saveToken = function (token) {

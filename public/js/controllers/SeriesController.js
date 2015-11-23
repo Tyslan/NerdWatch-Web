@@ -5,7 +5,7 @@ angular
 
 function SeriesController(SeriesService, auth) {
     var vmSeries = this;
-    vmSeries.tag = "Nerd Approved series"
+    vmSeries.tag = 'Nerd Approved series';
 
     vmSeries.isLoggedIn = auth.isLoggedIn;
 

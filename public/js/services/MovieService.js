@@ -24,5 +24,5 @@ function MovieService($http){
         delete : function(id) {
             return $http.delete('/api/movies/' + id);
         }
-    }
+    };
 }

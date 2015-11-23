@@ -7,7 +7,7 @@ var jwt = require('express-jwt');
 var router = express.Router();
 var User = mongoose.model('User');
 
-var secret = process.env.SECRET || "SECRET";
+var secret = process.env.SECRET || 'SECRET';
 // Authentication middleware
 var auth = jwt({secret: secret, userProperty: 'payload'});
 
@@ -26,15 +26,15 @@ router.post('/register', function(req, res, next){
 
     user.username = req.body.username;
 
-    user.setPassword(req.body.password)
+    user.setPassword(req.body.password);
 
     user.save(function (err){
         //if(err){ return next(err); }
         if(err){
-            res.status(409).json({message: "User Exists"});
+            res.status(409).json({message: 'User Exists'});
         }
 
-        return res.json({token: user.generateJWT()})
+        return res.json({token: user.generateJWT()});
     });
 });
 

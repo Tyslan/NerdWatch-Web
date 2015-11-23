@@ -6,30 +6,30 @@ var Series = require('./models/series');
 var movies = require('./seeds/movies');
 var series = require('./seeds/series');
 
-console.log("Connecting to database")
+console.log('Connecting to database');
 mongoose.connect(db.url);
 dropCollectionForModel(Movie);
 dropCollectionForModel(Series);
 seedCollectionForModel(Movie, movies);
 seedCollectionForModel(Series, series);
-console.log("Closing connection");
+console.log('Closing connection');
 mongoose.disconnect();
 
 function dropCollectionForModel(model){
     var modelName =  model.collection.collectionName;
-    console.log("Dropping " + modelName +"...");
+    console.log('Dropping ' + modelName +'...');
     model.collection.remove();
-    console.log(modelName + " was dropped");
+    console.log(modelName + ' was dropped');
 }
 
 function seedCollectionForModel(model, data){
     var modelName =  model.collection.collectionName;
-    console.log("Seeding " + modelName + "...");
+    console.log('Seeding ' + modelName + '...');
     model.collection.insert(data);
     insertCompleteMessage(modelName, data.length);
 }
 
 function insertCompleteMessage(modelName, count) {
-    var string = count + " documents added to " + modelName + "!";
+    var string = count + ' documents added to ' + modelName + '!';
     console.log(string);
 }

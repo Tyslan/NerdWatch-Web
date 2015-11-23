@@ -5,7 +5,7 @@ angular
 
 function MovieController(MovieService, auth) {
     var vmMovies = this;
-    vmMovies.tag = "Nerd Approved movies"
+    vmMovies.tag = 'Nerd Approved movies';
 
     vmMovies.isLoggedIn = auth.isLoggedIn;
 

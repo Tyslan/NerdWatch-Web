@@ -24,5 +24,5 @@ function SeriesService($http){
         delete : function(id) {
             return $http.delete('/api/series/' + id);
         }
-    }
+    };
 }
