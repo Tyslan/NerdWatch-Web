@@ -10,11 +10,12 @@
     - [X] final json films
     - [X] final json films
 - [X] seeder maken
+- [X] minificate-js
+- [ ] minificate-css
 - [ ] views maken
 - [ ] directives
 - [ ] Add comments
 - [ ] Add votes
 
 ##Idee
-
 Nerd movie and serie app
