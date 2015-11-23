@@ -51,6 +51,8 @@
   "validthis": false,
   "noyield": false,
 
+  "mocha": true,
+
   "browser": true,
   "node": true,
 

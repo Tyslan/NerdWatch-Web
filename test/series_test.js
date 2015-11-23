@@ -17,7 +17,8 @@ describe('GET /api/series', function () {
                 expect(fetchedData).to.not.empty;
 
                 fetchedData.forEach(function (series) {
-                    expect(series).to.have.all.keys('_id', 'description', 'genres', 'storyline', 'title', 'firstYear', 'lastYear', 'nrOfSeasons');
+                    expect(series).to.have.all.keys('_id', 'description', 'genres', 'storyline',
+                        'title', 'firstYear', 'lastYear', 'nrOfSeasons');
                     expect(series.genres).to.be.an('array');
                     expect(series.nrOfSeasons).to.be.a('Number');
                 });
