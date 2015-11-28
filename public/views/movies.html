@@ -1,25 +1,51 @@
 <!-- public/views/movies.html -->
 
-<div class="jumbotron text-center">
-    <h1>Movies</h1>
+<!--<div class="jumbotron text-center">-->
+    <!--<h1>Movies</h1>-->
 
-    <p>{{vmMovies.tag}}</p>
+    <!--<p>{{vmMovies.tag}}</p>-->
+
+    <div class="page-header">
+        <h1>Movies <small>{{vmMovies.tag}}</small></h1>
+    </div>
 
     <div ng-show="vmMovies.isLoggedIn()">
-        <h2>Movies:</h2>
+        <!--<h2>Movies:</h2>-->
 
         <div ng-repeat="movie in vmMovies.movies">
-            <div class="movie">
-                <h2>{{movie.title}} - {{movie.year}}</h2>
+            <!--<div class="movie">-->
+                <!--<h2>{{movie.title}} - {{movie.year}}</h2>-->
 
-                <div ng-repeat="genre in movie.genres track by $index">
-                    <p>{{genre}}</p>
+                <!--<div ng-repeat="genre in movie.genres track by $index">-->
+                    <!--<p>{{genre}}</p>-->
+                <!--</div>-->
+                <!--<p>{{movie.description}}</p>-->
+
+                <!--<p>{{movie.storyline}}</p>-->
+
+                <!--<p>Upvotes = {{movie.upvotes}}</p>-->
+                <!--<button ng-click="vmMovies.upvote(movie)">Upvote</button>-->
+            <!--</div>-->
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{movie.title}} - {{movie.year}}</h3>
                 </div>
-                <p>{{movie.description}}</p>
-                <p>{{movie.storyline}}</p>
-                <p>Upvotes = {{movie.upvotes}}</p>
-                <button ng-click="vmMovies.upvote(movie)">Upvote</button>
+                <div class="panel-body">
+                    <p>
+                        <span ng-repeat="genre in movie.genres track by $index">
+                            <span class="label label-default">{{genre}}</span>
+                        </span>
+                    </p>
+                    <p>
+                        {{movie.description}}
+                    </p>
+                    <p>
+                        Likes <span class="badge">{{movie.upvotes}}</span> <button type="button" class="btn btn-primary" ng-click="vmMovies.upvote(movie)" >Like</button>
+                    </p>
+
+                </div>
             </div>
         </div>
     </div>
-</div>
+<!--</div>-->
