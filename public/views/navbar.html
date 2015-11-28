@@ -5,8 +5,8 @@
 
     <!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE -->
     <ul class="nav navbar-nav">
-        <li ng-show="vmNav.isLoggedIn()"><a>{{ currentUser() }}</a></li>
-        <li ng-show="vmNav.isLoggedIn()"><a href="" ng-click="logOut()">Log Out</a></li>
+        <li ng-show="vmNav.isLoggedIn()"><a>{{ vmNav.currentUser() }}</a></li>
+        <li ng-show="vmNav.isLoggedIn()"><a href="" ng-click="vmNav.logOut()">Log Out</a></li>
         <li ng-hide="vmNav.isLoggedIn()"><a href="/login">Log In</a></li>
         <li ng-hide="vmNav.isLoggedIn()"><a href="/register">Register</a></li>
         <li><a href="/nerds">Nerds</a></li>
