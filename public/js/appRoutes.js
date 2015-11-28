@@ -22,7 +22,7 @@ angular
             .state('login', {
                 url: '/login',
                 templateUrl: '/views/login.html',
-                controller: 'AuthCtrl',
+                controller: 'AuthController',
                 onEnter: ['$location', 'auth', function ($location, auth) {
                     if (auth.isLoggedIn()) {
                         $location.url('/home');
@@ -32,7 +32,7 @@ angular
             .state('register', {
                 url: '/register',
                 templateUrl: '/views/register.html',
-                controller: 'AuthCtrl',
+                controller: 'AuthController',
                 onEnter: ['$location', 'auth', function ($location, auth) {
                     if (auth.isLoggedIn()) {
                         $location.url('/home');
