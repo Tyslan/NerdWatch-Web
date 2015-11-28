@@ -18,22 +18,7 @@
 <div class="container">
 
     <!-- HEADER -->
-    <nav class="navbar navbar-inverse" ng-controller="NavController">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/">NerdApp</a>
-        </div>
-
-        <!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE -->
-        <ul class="nav navbar-nav">
-            <li ng-show="isLoggedIn()"><a>{{ currentUser() }}</a></li>
-            <li ng-show="isLoggedIn()"><a href="" ng-click="logOut()">Log Out</a></li>
-            <li ng-hide="isLoggedIn()"><a href="/login">Log In</a></li>
-            <li ng-hide="isLoggedIn()"><a href="/register">Register</a></li>
-            <li><a href="/nerds">Nerds</a></li>
-            <li><a href="/movies">Movies</a></li>
-            <li><a href="/series">Series</a></li>
-        </ul>
-    </nav>
+    <navbar></navbar>
 
     <!-- ANGULAR DYNAMIC CONTENT -->
     <div ui-view></div>
@@ -57,5 +42,6 @@
 <script src="js/services/NerdService.js"></script>
 <script src="js/services/MovieService.js"></script>
 <script src="js/services/SeriesService.js"></script>
+<script src="js/directives/NavBarDirective.js"></script>
 </body>
 </html>

@@ -1,29 +1,25 @@
 // public/js/controllers/AuthController.js
 angular
     .module('NerdApp')
-    .controller('AuthCtrl',
-    [
-        '$scope',
-        '$state',
-        'auth',
-        function ($scope, $state, auth) {
-            $scope.user = {};
+    .controller('AuthController', AuthController);
 
-            $scope.register = function () {
-                auth.register($scope.user).error(function (error) {
-                    $scope.error = error;
-                }).then(function () {
-                    $state.go('nerds');
-                });
-            };
+function AuthController($state, auth) {
+    var vmAuth = this;
+    vmAuth.user = {};
 
-            $scope.logIn = function () {
-                auth.logIn($scope.user).error(function (error) {
-                    $scope.error = error;
-                }).then(function () {
-                    $state.go('nerds');
-                });
-            };
-        }
-    ]
-);
+    vmAuth.register = function () {
+        auth.register(vmAuth.user).error(function (error) {
+            vmAuth.error = error;
+        }).then(function () {
+            $state.go('nerds');
+        });
+    };
+
+    vmAuth.logIn = function () {
+        auth.logIn(vmAuth.user).error(function (error) {
+            vmAuth.error = error;
+        }).then(function () {
+            $state.go('nerds');
+        });
+    };
+}

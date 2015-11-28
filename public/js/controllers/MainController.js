@@ -1,7 +1,10 @@
-// public/js/controllers/MainCtrl.js
-angular.module('NerdApp')
-    .controller('MainController', function ($scope, auth) {
+// public/js/controllers/MainController.js
+angular
+    .module('NerdApp')
+    .controller('MainController', MainController);
 
-        $scope.tagline = 'To the moon and back!';
-        $scope.isLoggedIn = auth.isLoggedIn;
-    });
+function MainController(auth) {
+    var vmMain = this;
+    vmMain.tagline = 'To the moon and back!';
+    vmMain.isLoggedIn = auth.isLoggedIn;
+}
