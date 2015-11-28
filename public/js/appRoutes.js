@@ -9,7 +9,8 @@ angular
             .state('home', {
                 url: '/home',
                 templateUrl: '/views/home.html',
-                controller: 'MainController'
+                controller: 'MainController',
+                controllerAs: 'vmMain'
             })
 
             // nerds page that will use the NerdController
