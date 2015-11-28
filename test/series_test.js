@@ -18,7 +18,7 @@ describe('GET /api/series', function () {
 
                 fetchedData.forEach(function (series) {
                     expect(series).to.have.all.keys('_id', 'description', 'genres', 'storyline',
-                        'title', 'firstYear', 'lastYear', 'nrOfSeasons');
+                        'title', 'firstYear', 'lastYear', 'nrOfSeasons', 'upvotes');
                     expect(series.genres).to.be.an('array');
                     expect(series.nrOfSeasons).to.be.a('Number');
                 });

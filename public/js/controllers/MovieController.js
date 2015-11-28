@@ -13,5 +13,11 @@ function MovieController(MovieService, auth) {
         MovieService.get().then(function (response) {
             vmMovies.movies = response.data;
         });
+
+        vmMovies.upvote = function(movie){
+            MovieService.upvote(movie._id).success(function(data){
+                movie.upvotes += 1;
+            });
+        };
     }
 }
