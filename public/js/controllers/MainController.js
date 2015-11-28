@@ -1,5 +1,6 @@
 // public/js/controllers/MainController.js
-angular.module('NerdApp')
+angular
+    .module('NerdApp')
     .controller('MainController', MainController);
 
 function MainController(auth) {
