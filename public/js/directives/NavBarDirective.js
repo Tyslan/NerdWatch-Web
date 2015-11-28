@@ -4,6 +4,6 @@ angular.module('NerdApp')
             restrict: 'E',
             templateUrl: '../../../views/navbar.html',
             controller: 'NavController',
-            controllerAs: 'vmNav'
+            controllerAs: 'vmNav',
         };
     });
