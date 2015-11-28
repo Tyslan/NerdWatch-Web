@@ -14,6 +14,10 @@ function SeriesService($http){
             return $http.get('/api/series/' + id);
         },
 
+        upvote: function (id) {
+            return $http.put('/api/series/' + id + '/upvote');
+        },
+
         // these will work when more API routes are defined on the Node side of things
         // call to POST and create a new nerd
         create : function(movieData) {

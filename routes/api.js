@@ -25,6 +25,17 @@ Movie.route('upvote', {
 Movie.register(router, '/movies');
 
 Series.methods(['get', 'put', 'post', 'delete']);
+
+Series.route('upvote', {
+    detail: true,
+    handler: function(req, res, next) {
+        Series.findOne({_id: req.params.id}).exec(function(err, series){
+            series.upvote();
+            res.json(series);
+        });
+    }
+});
+
 Series.register(router, '/series');
 
 module.exports = router;
