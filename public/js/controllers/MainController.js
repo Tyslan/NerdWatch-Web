@@ -1,4 +1,4 @@
-// public/js/controllers/MainCtrl.js
+// public/js/controllers/MainController.js
 angular.module('NerdApp')
     .controller('MainController', MainController);
 

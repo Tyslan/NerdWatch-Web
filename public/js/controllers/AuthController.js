@@ -3,20 +3,21 @@ angular
     .module('NerdApp')
     .controller('AuthController', AuthController);
 
-function AuthController($scope, $state, auth) {
-    $scope.user = {};
+function AuthController($state, auth) {
+    var vmAuth = this;
+    vmAuth.user = {};
 
-    $scope.register = function () {
-        auth.register($scope.user).error(function (error) {
-            $scope.error = error;
+    vmAuth.register = function () {
+        auth.register(vmAuth.user).error(function (error) {
+            vmAuth.error = error;
         }).then(function () {
             $state.go('nerds');
         });
     };
 
-    $scope.logIn = function () {
-        auth.logIn($scope.user).error(function (error) {
-            $scope.error = error;
+    vmAuth.logIn = function () {
+        auth.logIn(vmAuth.user).error(function (error) {
+            vmAuth.error = error;
         }).then(function () {
             $state.go('nerds');
         });

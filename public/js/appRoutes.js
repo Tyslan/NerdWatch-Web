@@ -24,6 +24,7 @@ angular
                 url: '/login',
                 templateUrl: '/views/login.html',
                 controller: 'AuthController',
+                controllerAs: 'vmAuth',
                 onEnter: ['$location', 'auth', function ($location, auth) {
                     if (auth.isLoggedIn()) {
                         $location.url('/home');
@@ -34,6 +35,7 @@ angular
                 url: '/register',
                 templateUrl: '/views/register.html',
                 controller: 'AuthController',
+                controllerAs: 'vmAuth',
                 onEnter: ['$location', 'auth', function ($location, auth) {
                     if (auth.isLoggedIn()) {
                         $location.url('/home');
