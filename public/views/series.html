@@ -1,28 +1,82 @@
 <!-- public/views/series.html -->
 
-<div class="jumbotron text-center">
-    <h1>Series</h1>
+<div class="page-header">
+    <h1>Series
+        <small>{{vmSeries.tag}}</small>
+    </h1>
+</div>
 
-    <p>{{vmSeries.tag}}</p>
+<div ng-repeat="series in vmSeries.series | orderBy:'-upvotes'">
 
-    <div ng-show="vmSeries.isLoggedIn()">
-        <div ng-repeat="series in vmSeries.series">
-            <div class="series">
-                <h2>{{series.title}}</h2>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{series.title}}</h3>
+        </div>
+        <div class="panel-body">
+            <p>
+                        <span ng-repeat="genre in series.genres track by $index">
+                            <span class="label label-default">{{genre}}</span>
+                        </span>
+            </p>
 
-                <p>{{series.firstYear}} - {{series.lastYear}}</p>
+            <p>
+                {{series.description}}
+            </p>
 
-                <p>{{series.nrOfSeasons}} Seasons</p>
+            <p>
+                Likes <span class="badge">{{series.upvotes}}</span>
+            </p>
 
-                <div ng-repeat="genre in series.genres track by $index">
-                    <p>{{genre}}</p>
+            <p>
+                <button ng-show="vmSeries.isLoggedIn()" type="button" class="btn btn-primary" ng-click="vmSeries.upvote(series)"><span
+                        class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like
+                </button>
+                <span ng-hide="vmSeries.isLoggedIn()">Login to vote</span>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary pull-right" data-toggle="modal"
+                        data-target="#{{series._id}}">
+                    More
+                </button>
+            </p>
+
+            <!-- Modal -->
+            <div class="modal fade" id="{{series._id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">{{series.title}}</h4>
+                        </div>
+                        <div class="modal-header">
+                            <h4 class="modal-title">Year</h4>
+
+                            <p>{{series.firstYear}} - {{series.lastYear}}</p>
+                            <h4 class="modal-title">Number of seasons</h4>
+
+                            <p>{{series.nrOfSeasons}}</p>
+                            <h4 class="modal-title">Genre</h4>
+                                <span ng-repeat="genre in series.genres track by $index">
+                                    <span class="label label-default">{{genre}}</span>
+                                </span>
+                        </div>
+                        <div class="modal-body">
+                            <h4 class="modal-title">Storyline</h4>
+
+                            <p>{{series.storyline}}</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button ng-show="vmSeries.isLoggedIn()" type="button" class="btn btn-primary" data-dismiss="modal"
+                                    ng-click="vmSeries.upvote(series)"><span class="glyphicon glyphicon-thumbs-up"
+                                                                             aria-hidden="true"></span> Like
+                            </button>
+                            <span ng-hide="vmSeries.isLoggedIn()">Login to vote</span>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
-                <p>{{series.description}}</p>
-
-                <p>{{series.storyline}}</p>
-                <p>Upvotes = {{series.upvotes}}</p>
-                <button ng-click="vmSeries.upvote(series)">Upvote</button>
             </div>
+
         </div>
     </div>
 </div>
