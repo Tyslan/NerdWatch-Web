@@ -1,51 +1,94 @@
 <!-- public/views/movies.html -->
 
 <!--<div class="jumbotron text-center">-->
-    <!--<h1>Movies</h1>-->
+<!--<h1>Movies</h1>-->
 
-    <!--<p>{{vmMovies.tag}}</p>-->
+<!--<p>{{vmMovies.tag}}</p>-->
 
-    <div class="page-header">
-        <h1>Movies <small>{{vmMovies.tag}}</small></h1>
-    </div>
+<div class="page-header">
+    <h1>Movies
+        <small>{{vmMovies.tag}}</small>
+    </h1>
+</div>
 
-    <div ng-show="vmMovies.isLoggedIn()">
-        <!--<h2>Movies:</h2>-->
+<div ng-show="vmMovies.isLoggedIn()">
+    <!--<h2>Movies:</h2>-->
 
-        <div ng-repeat="movie in vmMovies.movies">
-            <!--<div class="movie">-->
-                <!--<h2>{{movie.title}} - {{movie.year}}</h2>-->
+    <div ng-repeat="movie in vmMovies.movies">
+        <!--<div class="movie">-->
+        <!--<h2>{{movie.title}} - {{movie.year}}</h2>-->
 
-                <!--<div ng-repeat="genre in movie.genres track by $index">-->
-                    <!--<p>{{genre}}</p>-->
-                <!--</div>-->
-                <!--<p>{{movie.description}}</p>-->
+        <!--<div ng-repeat="genre in movie.genres track by $index">-->
+        <!--<p>{{genre}}</p>-->
+        <!--</div>-->
+        <!--<p>{{movie.description}}</p>-->
 
-                <!--<p>{{movie.storyline}}</p>-->
+        <!--<p>{{movie.storyline}}</p>-->
 
-                <!--<p>Upvotes = {{movie.upvotes}}</p>-->
-                <!--<button ng-click="vmMovies.upvote(movie)">Upvote</button>-->
-            <!--</div>-->
+        <!--<p>Upvotes = {{movie.upvotes}}</p>-->
+        <!--<button ng-click="vmMovies.upvote(movie)">Upvote</button>-->
+        <!--</div>-->
 
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{{movie.title}} - {{movie.year}}</h3>
-                </div>
-                <div class="panel-body">
-                    <p>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{movie.title}} - {{movie.year}}</h3>
+            </div>
+            <div class="panel-body">
+                <p>
                         <span ng-repeat="genre in movie.genres track by $index">
                             <span class="label label-default">{{genre}}</span>
                         </span>
-                    </p>
-                    <p>
-                        {{movie.description}}
-                    </p>
-                    <p>
-                        Likes <span class="badge">{{movie.upvotes}}</span> <button type="button" class="btn btn-primary" ng-click="vmMovies.upvote(movie)" >Like</button>
-                    </p>
+                </p>
 
+                <p>
+                    {{movie.description}}
+                </p>
+
+                <p>
+                    Likes <span class="badge">{{movie.upvotes}}</span>
+                    <button type="button" class="btn btn-primary" ng-click="vmMovies.upvote(movie)"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like</button>
+                </p>
+                <p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-lg pull-right" data-toggle="modal"
+                            data-target="#myModal">
+                        More
+                    </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">{{movie.title}}</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="modal-title">Year</h4>
+
+                                <p>{{movie.year}}</p>
+                                <h4 class="modal-title">Genre</h4>
+                                <span ng-repeat="genre in movie.genres track by $index">
+                                    <span class="label label-default">{{genre}}</span>
+                                </span>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="modal-title">Storyline</h4>
+
+                                <p>{{movie.storyline}}</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" ng-click="vmMovies.upvote(movie)"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
+</div>
 <!--</div>-->
