@@ -49,8 +49,43 @@
                     <button type="button" class="btn btn-primary" ng-click="vmMovies.upvote(movie)"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like</button>
                 </p>
                 <p>
-                    <button type="button" class="btn btn-primary btn-lg pull-right">Details</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-lg pull-right" data-toggle="modal"
+                            data-target="#myModal">
+                        More
+                    </button>
                 </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">{{movie.title}}</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="modal-title">Year</h4>
+
+                                <p>{{movie.year}}</p>
+                                <h4 class="modal-title">Genre</h4>
+                                <span ng-repeat="genre in movie.genres track by $index">
+                                    <span class="label label-default">{{genre}}</span>
+                                </span>
+                            </div>
+                            <div class="modal-body">
+                                <h4 class="modal-title">Storyline</h4>
+
+                                <p>{{movie.storyline}}</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" ng-click="vmMovies.upvote(movie)"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
