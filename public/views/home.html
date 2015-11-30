@@ -1,14 +1,12 @@
 <!-- public/views/home.html -->
 
 <div class="jumbotron text-center">
-    <h1>Home Page 4 Life</h1>
+    <h1>Nerd Watch</h1>
 
-    <p>{{ tagline }}</p>
+    <p>{{ vmMain.tagline }}</p>
 
-    <div ng-hide="isLoggedIn()">
-        <h1>Authentication</h1>
-
-        <p>Login or Register with:</p>
+    <div ng-hide="vmMain.isLoggedIn()">
+        <h2>Login or Register with:</h2>
 
         <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
         <a href="/register" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>

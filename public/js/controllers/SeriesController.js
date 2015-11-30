@@ -13,5 +13,11 @@ function SeriesController(SeriesService, auth) {
         SeriesService.get().then(function (response) {
             vmSeries.series = response.data;
         });
+
+        vmSeries.upvote = function(movie){
+            SeriesService.upvote(movie._id).success(function(data){
+                movie.upvotes += 1;
+            });
+        };
     }
 }

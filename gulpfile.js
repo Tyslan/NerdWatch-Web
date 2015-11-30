@@ -7,7 +7,13 @@ var  testFolder = './test';
 
 gulp.task('runTests', function(){
     return gulp.src(testFolder + '/*js')
-        .pipe(plugins.mocha());
+        .pipe(plugins.mocha())
+        .once('error', function(){
+            process.exit(1);
+        })
+        .once('end', function(){
+            process.exit();
+        });
 });
 
 gulp.task('compress', function() {

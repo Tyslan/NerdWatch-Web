@@ -1,7 +1,8 @@
 // public/js/appRoutes.js
 angular
     .module('NerdApp')
-    .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    .config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
+        function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
         $stateProvider
 
@@ -9,7 +10,8 @@ angular
             .state('home', {
                 url: '/home',
                 templateUrl: '/views/home.html',
-                controller: 'MainController'
+                controller: 'MainController',
+                controllerAs: 'vmMain'
             })
 
             // nerds page that will use the NerdController
@@ -22,7 +24,8 @@ angular
             .state('login', {
                 url: '/login',
                 templateUrl: '/views/login.html',
-                controller: 'AuthCtrl',
+                controller: 'AuthController',
+                controllerAs: 'vmAuth',
                 onEnter: ['$location', 'auth', function ($location, auth) {
                     if (auth.isLoggedIn()) {
                         $location.url('/home');
@@ -32,7 +35,8 @@ angular
             .state('register', {
                 url: '/register',
                 templateUrl: '/views/register.html',
-                controller: 'AuthCtrl',
+                controller: 'AuthController',
+                controllerAs: 'vmAuth',
                 onEnter: ['$location', 'auth', function ($location, auth) {
                     if (auth.isLoggedIn()) {
                         $location.url('/home');
