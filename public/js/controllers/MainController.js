@@ -5,6 +5,6 @@ angular
 
 function MainController(auth) {
     var vmMain = this;
-    vmMain.tagline = 'To the moon and back!';
+    vmMain.tagline = 'Nerd approved movies and series';
     vmMain.isLoggedIn = auth.isLoggedIn;
 }
