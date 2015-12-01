@@ -1,0 +1,29 @@
+<div class="jumbotron">
+    <h1><span class="fa fa-sign-in"></span> Add a movie</h1>
+
+    <!-- LOGIN FORM -->
+    <form>
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" placeholder="Title"
+                   ng-model="vmAuth.user.username" required/>
+        </div>
+        <div class="form-group">
+            <label>Year</label>
+            <input type="text" class="form-control" placeholder="Year"
+                   ng-model="vmAuth.user.password" required/>
+        </div>
+
+        <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" rows="3" placeholder="Short description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label>Storyline</label>
+            <textarea class="form-control" rows="6" placeholder="Tell the story" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">Add</button>
+    </form>
+</div>
+
