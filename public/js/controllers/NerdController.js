@@ -13,6 +13,7 @@ function NerdController(NerdService, auth) {
 
         NerdService.get().then(function (response) {
             vmNerd.nerds = response.data;
+            vmNerd.multipleNerds = vmNerd.nerds.length !== 1;
         });
     }
 }
