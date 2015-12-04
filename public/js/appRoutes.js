@@ -54,6 +54,12 @@ angular
                 templateUrl: '/views/series.html',
                 controller: 'SeriesController',
                 controllerAs: 'vmSeries'
+            })
+            .state('addMovie', {
+                url: '/addMovie',
+                templateUrl: '/views/addMovie.html',
+                controller: 'AddMovieController',
+                controllerAs: 'vmAddMovie'
             });
 
         $urlRouterProvider.otherwise('home');

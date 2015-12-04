@@ -1,0 +1,50 @@
+<div class="jumbotron">
+    <h1><span class="fa fa-sign-in"></span> Add a movie</h1>
+
+    <div ng-show="vmAddMovie.error" class="alert alert-danger row">
+        <span>{{ vmAddMovie.error.message }}</span>
+    </div>
+
+    <div ng-show="vmAddMovie.succes" class="alert alert-success row">
+        <span>{{ vmAddMovie.succes }}</span>
+    </div>
+
+    <!-- Add MOVIE FORM -->
+    <form>
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" placeholder="Title"
+                   ng-model="vmAddMovie.movie.title" required/>
+        </div>
+        <div class="form-group">
+            <label>Year</label>
+            <input type="text" class="form-control" placeholder="Year"
+                   ng-model="vmAddMovie.movie.year" required="Number"/>
+        </div>
+
+        <div class="form-group">
+            <label ng-repeat="genre in vmAddMovie.possibleGenres" class="checkbox-inline" id="{{genre}}">
+                <input type="checkbox"
+                       ng-change="vmAddMovie.sync(bool, genre)"
+                       ng-model="bool"
+                       ng-checked="vmAddMovie.isChecked(genre)">
+                {{genre}}
+            </label>
+
+        </div>
+
+        <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" rows="3" placeholder="Short description"
+                      ng-model="vmAddMovie.movie.description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label>Storyline</label>
+            <textarea class="form-control" rows="6" placeholder="Tell the story"
+                      ng-model="vmAddMovie.movie.storyline" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" ng-click="vmAddMovie.addMovie()">Add</button>
+    </form>
+</div>
+
