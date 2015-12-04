@@ -30,6 +30,10 @@
             </p>
 
             <p>
+                Posted by: {{movie.contributor}} on {{movie.date | date : format : timezone}}
+            </p>
+
+            <p>
                 <button ng-show="vmMovies.isLoggedIn()" type="button" class="btn btn-primary"
                         ng-click="vmMovies.upvote(movie)"><span
                         class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like
