@@ -47,7 +47,7 @@ function AddMovieController(MovieService, auth) {
             // remove item
             for (var i = 0; i < vmAddMovie.genres.length; i++) {
                 if (vmAddMovie.genres[i] === genre) {
-                    vmAddMovie.genre.splice(i, 1);
+                    vmAddMovie.genres.splice(i, 1);
                 }
             }
         }

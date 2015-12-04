@@ -10,7 +10,7 @@
     </div>
 
     <!-- Add MOVIE FORM -->
-    <form>
+    <form name="movieForm" ng-submit="vmAddMovie.addMovie()">
         <div class="form-group">
             <label>Title</label>
             <input type="text" class="form-control" placeholder="Title"
@@ -44,7 +44,7 @@
                       ng-model="vmAddMovie.movie.storyline" required></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary btn-lg" ng-click="vmAddMovie.addMovie()">Add</button>
+        <button type="submit" class="btn btn-primary btn-lg">Add</button>
     </form>
 </div>
 
