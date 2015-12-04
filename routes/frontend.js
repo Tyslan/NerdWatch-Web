@@ -29,7 +29,6 @@ router.post('/register', function(req, res, next){
     user.setPassword(req.body.password);
 
     user.save(function (err){
-        //if(err){ return next(err); }
         if(err){
             res.status(409).json({message: 'User Exists'});
         }

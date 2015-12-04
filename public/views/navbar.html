@@ -16,6 +16,11 @@
                 <li><a href="/nerds">Nerds</a></li>
                 <li><a href="/movies">Movies</a></li>
                 <li><a href="/series">Series</a></li>
+                <li ng-show="vmNav.isLoggedIn()">
+                    <a href="/addMovie">
+                        Add Movie
+                    </a>
+                </li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">

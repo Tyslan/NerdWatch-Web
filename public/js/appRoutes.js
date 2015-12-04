@@ -58,8 +58,8 @@ angular
             .state('addMovie', {
                 url: '/addMovie',
                 templateUrl: '/views/addMovie.html',
-                controller: '',
-                controllerAs: ''
+                controller: 'AddMovieController',
+                controllerAs: 'vmAddMovie'
             });
 
         $urlRouterProvider.otherwise('home');
