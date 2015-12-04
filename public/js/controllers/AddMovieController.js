@@ -3,7 +3,7 @@ angular
     .module('NerdApp')
     .controller('AddMovieController', AddMovieController);
 
-function AddMovieController(MovieService) {
+function AddMovieController(MovieService, auth) {
     var vmAddMovie = this;
     vmAddMovie.movie = {};
     vmAddMovie.genres = [];
@@ -27,6 +27,8 @@ function AddMovieController(MovieService) {
 
     vmAddMovie.addMovie = function () {
         vmAddMovie.movie.genres = vmAddMovie.genres;
+        vmAddMovie.movie.date = Date.now();
+        vmAddMovie.movie.contributor = auth.currentUser();
         console.log(vmAddMovie.movie);
         MovieService.create(vmAddMovie.movie)
             .success(function () {
