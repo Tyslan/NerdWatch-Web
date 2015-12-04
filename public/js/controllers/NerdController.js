@@ -13,6 +13,7 @@ function NerdController(NerdService, auth) {
 
         NerdService.get().then(function (response) {
             vmNerd.nerds = response.data;
+            console.log(vmNerd.nerds);
         });
     }
 }

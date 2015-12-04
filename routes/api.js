@@ -7,8 +7,8 @@ var Nerd = require('./../models/nerd');
 var Movie = require('./../models/movie');
 var Series = require('./../models/series');
 
-Nerd.methods(['get', 'put', 'post', 'delete']);
-Nerd.register(router, '/nerds');
+//Nerd.methods(['get', 'put', 'post', 'delete']);
+//Nerd.register(router, '/nerds');
 
 Movie.methods(['get', 'put', 'post', 'delete']);
 
@@ -23,14 +23,14 @@ Movie.route('upvote', {
 });
 
 
-Movie.route('distinctContributors', {
-    handler: function (req, res, next) {
-        Movie.find().distinct('contributor', function (err, contributors) {
-            res.json(contributors);
-        });
-    },
-    methods: ['get']
-});
+//Movie.route('distinctContributors', {
+//    handler: function (req, res, next) {
+//        Movie.find().distinct('contributor', function (err, contributors) {
+//            res.json(contributors);
+//        });
+//    },
+//    methods: ['get']
+//});
 
 router.get('/distinctContributors', function (req, res, next) {
     Movie.find().distinct('contributor', function (err, contributors) {
