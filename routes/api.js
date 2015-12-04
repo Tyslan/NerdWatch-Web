@@ -2,13 +2,9 @@
 var express = require('express');
 var router = express.Router();
 
-// Model
-var Nerd = require('./../models/nerd');
+// Models
 var Movie = require('./../models/movie');
 var Series = require('./../models/series');
-
-//Nerd.methods(['get', 'put', 'post', 'delete']);
-//Nerd.register(router, '/nerds');
 
 Movie.methods(['get', 'put', 'post', 'delete']);
 
@@ -22,18 +18,9 @@ Movie.route('upvote', {
     }
 });
 
-
-//Movie.route('distinctContributors', {
-//    handler: function (req, res, next) {
-//        Movie.find().distinct('contributor', function (err, contributors) {
-//            res.json(contributors);
-//        });
-//    },
-//    methods: ['get']
-//});
-
 router.get('/distinctContributors', function (req, res, next) {
     Movie.find().distinct('contributor', function (err, contributors) {
+        contributors.sort()
         res.json(contributors);
     });
 });
