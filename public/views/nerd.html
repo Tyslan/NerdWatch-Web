@@ -6,9 +6,11 @@
     <p>{{vmNerd.tagline }}</p>
 
     <div ng-show="vmNerd.isLoggedIn()">
-        <h2>The proud nerds are:</h2>
+
+        <h2 ng-show="vmNerd.multipleNerds">The proud contributor nerds are:</h2>
+        <h2 ng-hide="vmNerd.multipleNerds">The proud contributor nerd is:</h2>
         <div ng-repeat="nerd in vmNerd.nerds">
-            <p>{{nerd.name}}</p>
+            <p>{{nerd}}</p>
         </div>
     </div>
 </div>

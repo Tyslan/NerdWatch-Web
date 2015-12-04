@@ -12,10 +12,10 @@
 - [X] seeder maken
 - [X] minificate-js
 - [ ] minificate-css
-- [ ] views maken
-- [ ] directives
+- [X] views maken
+- [X] directives
 - [ ] Add comments
-- [ ] Add votes
+- [X] Add votes
 
 ##Idee
 Nerd movie and serie app

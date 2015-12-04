@@ -18,7 +18,7 @@ describe('GET /api/movies', function () {
 
                 fetchedData.forEach(function (movie) {
                     expect(movie).to.have.all.keys('_id', 'description', 'genres', 'storyline',
-                        'title', 'year', 'upvotes');
+                        'title', 'year', 'contributor', 'date', 'upvotes');
                     expect(movie.genres).to.be.an('array');
                 });
                 done();
