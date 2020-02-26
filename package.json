@@ -10,7 +10,7 @@
     "express": "~4.5.1",
     "express-jwt": "^3.3.0",
     "jsonwebtoken": "^5.4.1",
-    "method-override": "~2.0.2",
+    "method-override": "~3.0.0",
     "mongodb": "^2.0.48",
     "mongoose": "~4.0.0",
     "morgan": "^1.6.1",
