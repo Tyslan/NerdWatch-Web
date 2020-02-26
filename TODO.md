@@ -17,5 +17,7 @@
 - [ ] Add comments
 - [X] Add votes
 
-##Idee
+- [ ] Update stack
+
+##Idea
 Nerd movie and serie app
