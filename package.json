@@ -8,7 +8,7 @@
     "body-parser": "~1.4.2",
     "bower": "^1.6.5",
     "express": "~4.5.1",
-    "express-jwt": "^3.3.0",
+    "express-jwt": "^6.0.0",
     "jsonwebtoken": "^5.4.1",
     "method-override": "~2.0.2",
     "mongodb": "^2.0.48",
